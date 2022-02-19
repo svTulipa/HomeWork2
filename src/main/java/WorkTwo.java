@@ -1,23 +1,20 @@
 public class WorkTwo {
 
     public static void main (String [] args){
-            int a = 666;
-            int b = -13;
-            int d = 4;
-            String c = "sun";
-            Positive_Negative(a);
-            isPositive(b);
-            printString_Number(c, d);
+            number(16, -12);
+            Positive_Negative(-16);
+            isPositive(13);
+            printString_Number("sun", 7);
+            LeapYear(1863);
     }
-
         public static boolean number (int first, int two ) {
             if ((first + two) >=10 && (first + two) <=20 ){
                 return true;
             } else {
                 return false;
             }
+    }
 
-        }
         public static void Positive_Negative(int a){
             if (a >=0) {
                 System.out.println("Number is positive");
