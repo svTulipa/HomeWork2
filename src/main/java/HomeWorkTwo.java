@@ -3,7 +3,6 @@ public class HomeWorkTwo {
         int a = 666;
         int b = -13;
         int d = 4;
-        int x = 1897;
         String c = "sun";
         Positive_Negative(a);
         isPositive(b);
@@ -28,27 +27,26 @@ public class HomeWorkTwo {
     }
 
     public static boolean isPositive (int b){
-        if (b > 0) {
-            return false;
-        } else {
+        if (b >= 0) {
             return true;
+        } else {
+            return false;
         }
     }
 
-    public static void printString_Number (String c, int d ){
-        for (int i = 0; d < 12; d++ ) {
+    public static void printString_Number (String c,  int d ){
+        for (int i = 0; i < d; i++ ) {
             System.out.println(c);
         }
     }
     public  static boolean LeapYear (int x){
-        if (x % 4 ==0) {
+        x = 1456;
+        if ((x % 4 ==0) && (x % 400 == 0)){
             return true;
         } else if (x % 100 == 0) {
             return false;
-        } else if (x % 400 == 0) {
-            return true;
         } else {
-            return false;  // В последней строке сомневался, не хотел писать. Но логика не работала. признаюсь честно писал еще и с памяти, так как такое выполнял на курсы О.П.
+            return false;
         }
     }
 }
